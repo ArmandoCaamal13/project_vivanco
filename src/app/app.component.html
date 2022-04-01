@@ -1,23 +1,47 @@
+<div class="caja-blanca">
+  <img src="../assets/img/logo 2.jpeg">
+</div>
+
 <div id="app">
-  <nav class="navbar navbar-expand navbar-dark bg-dark">
+  <nav class="navbar navbar-expand navbar-dark bg-primary">
     <a href="#" class="navbar-brand">Goodvision</a>
     <ul class="navbar-nav mr-auto" routerLinkActive="active">
       <li class="nav-item">
         <a href="home/home.component.html" class="nav-link" routerLink="home">Home </a>
       </li>
-      <li class="nav-item" *ngIf="showAdminBoard">
-        <a href="board-admin/board-admin.component.html" class="nav-link" routerLink="admin">Admin Board</a>
-      </li>
+      
       <li class="nav-item" *ngIf="showModeratorBoard">
-        <a href="/mod" class="nav-link" routerLink="mod">Moderator Board</a>
+        <a href="./board-moderator/board-moderator.component.html" class="nav-link" routerLink="mod">Moderator Board</a>
       </li>
-      <li class="nav-item"> 
-        <a href="/user" class="nav-link" *ngIf="isLoggedIn" routerLink="user">User</a>
-      </li>
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <a href="./page/lentes-aumento/lentes-aumento.component.html" class="nav-link" routerLink="lentesaumento">Lentes de aumento</a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <a href="./page/lentes-de-sol/lentes-de-sol.component.html" class="nav-link" routerLink="lentesdesol">Lentes de sol</a>
+        </li >
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <a href="./page/quienes-somos/quienes-somos.component.html" class="nav-link" routerLink="quienessomos">Quienes somos</a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <a href="./page/about/about.component.html" class="nav-link" routerLink="about">Conocenos</a>
+        </li>
+      
+        <li class="nav-item" *ngIf="showAdminBoard">
+          <a href="./producto/sol/sol.component.html" class="nav-link" routerLink="sol">Lentes de sol</a>
+        </li>
+        <li class="nav-item" *ngIf="showAdminBoard">
+          <a href="./producto/aumento/aumento.component.html"  routerLink="aumento" class="nav-link">Lentes de Contacto</a>
+        </li>
+        <li class="nav-item" *ngIf="showAdminBoard"> 
+          <a href="./producto/lista" routerLink="lista" class="nav-link">Lista de productos</a>         
+        </li>
+        <li class="nav-item" *ngIf="showAdminBoard">
+          <a href="./producto/registro-producto/registro-producto.component.html" routerLink="registroproducto" class="nav-link"> Registrar producto</a> 
+        </li>
     </ul>
     <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
       <li class="nav-item">
-        <a href="/register" class="nav-link" routerLink="register">register</a>
+        <a href="/register" class="nav-link" routerLink="register">Registro</a>
       </li>
       <li class="nav-item">
         <a href="/login" class="nav-link" routerLink="login">Iniciar sesion</a>

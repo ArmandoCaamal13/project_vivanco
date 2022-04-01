@@ -1,0 +1,25 @@
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<h3 class="text-primary text-center">DETALLES DEL PRODUCTO</h3>
+<div>
+    <div class="text-primary text-center">
+        <label><b>ID: {{producto.id}}</b></label>
+    </div>
+    <div class="text-primary text-center">
+        <label><b>Nombre: {{producto.nombre}}</b></label>
+    </div>
+    <div class="text-primary text-center">
+      <label><img src="{{producto.imagen}}" alt="imagen del producto" class="img-fluid rounded"></label>
+  </div>
+    <div class="text-primary text-center">
+        <label ><b>Descripcion: {{producto.descripcion}}</b></label>
+    </div >
+    <div class="text-primary text-center">
+        <label><b>Tipo: {{producto.idTipo}}</b></label>
+    </div>
+    <div class="text-success text-center">
+        <label><b>Precio: {{producto.precio}}</b></label>
+    </div>
+
+    <a (click)="irAlaListaDeProductos()" class="btn btn-primary d-grid gap-2 col-6 mx-auto">Comprar</a>
+</div>

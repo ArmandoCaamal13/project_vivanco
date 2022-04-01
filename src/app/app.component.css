@@ -1,0 +1,22 @@
+
+.caja-blanca{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  color: #fff;
+}
+
+
+.caja-blanca img{
+  width: 600px;
+  height: 140px;
+}
+
+
+
+
+
+
+

@@ -15,6 +15,16 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RegisterComponent } from './register/register.component';
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
+import { LentesAumentoComponent } from './page/lentes-aumento/lentes-aumento.component';
+import { LentesDeSolComponent } from './page/lentes-de-sol/lentes-de-sol.component';
+import { AboutComponent } from './page/about/about.component';
+import { QuienesSomosComponent } from './page/quienes-somos/quienes-somos.component';
+import { ActualizarComponent } from './producto/actualizar/actualizar.component';
+import { AumentoComponent } from './producto/aumento/aumento.component';
+import { SolComponent } from './producto/sol/sol.component';
+import { ListaComponent } from './producto/lista/lista.component';
+import { DetallesComponent } from './producto/detalles/detalles.component';
+import { RegistroProductoComponent } from './producto/registro-producto/registro-producto.component';
 
 
 
@@ -27,7 +37,17 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
     HomeComponent,
     LoginComponent,
     ProfileComponent,
-    RegisterComponent
+    RegisterComponent,
+    LentesAumentoComponent,
+    LentesDeSolComponent,
+    AboutComponent,
+    QuienesSomosComponent,
+    ActualizarComponent,
+    AumentoComponent,
+    SolComponent,
+    ListaComponent,
+    DetallesComponent,
+    RegistroProductoComponent
   ],
   imports: [
     BrowserModule,
